@@ -118,6 +118,7 @@ GEM
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     os (1.1.1)
+    pg (1.2.3)
     public_suffix (4.0.6)
     puma (3.12.6)
     rack (2.2.3)
@@ -192,7 +193,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.2)
     thor (1.0.1)
     thread_safe (0.3.6)
     tzinfo (1.2.7)
@@ -213,12 +213,12 @@ DEPENDENCIES
   httparty (~> 0.16.4)
   jb (~> 0.7.1)
   listen (>= 3.0.5, < 3.2)
+  pg
   puma (~> 3.11)
   rails (~> 5.2.4, >= 5.2.4.2)
   rspec-rails (~> 4.0.1)
   spring
   spring-watcher-listen (~> 2.0.0)
-  sqlite3
   tzinfo-data
 
 RUBY VERSION
