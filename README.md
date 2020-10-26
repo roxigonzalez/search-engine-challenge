@@ -3,9 +3,8 @@
 
 ## Search engine
 
-### Endpoint 
+### Endpoint
 
 ```
-/api/v1/search?q={query}&engine={google|engine|both}
+GET https://search-engine-avantica.herokuapp.com/api/v1/search?q={query_search}&engine={google|bing}|both}
 ```
-
