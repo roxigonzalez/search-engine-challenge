@@ -24,5 +24,7 @@ class SearchEngine
 		results[:bing] << BingSearch.new(@query).get_results if %w[bing both].include? @engine
 			
 		results
+	rescue => e 
+		Rails.logger.info e.inspect
 	end
 end
