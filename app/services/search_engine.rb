@@ -19,13 +19,11 @@ class SearchEngine
 
 		return results unless ENGINE_OPT.include? @engine
 
-		results[:google] << if %w[google both].include? @engine
+		results[:google] = if %w[google both].include? @engine
 			GoogleSearch.new(@query).get_results
-		else
-			[]
 		end
 
-		results[:bing] << if %w[bing both].include? @engine
+		results[:bing] = if %w[bing both].include? @engine
 			BingSearch.new(@query).get_results
 		end
 
