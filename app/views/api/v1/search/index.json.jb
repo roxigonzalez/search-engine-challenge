@@ -1,0 +1,4 @@
+{
+	google: @results[:google],
+  bing: @results[:bing]
+}
